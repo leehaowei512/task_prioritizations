@@ -1,5 +1,5 @@
-from input_data_reader import InputDataReader
-from models import Priority, Team, User
+from database.helpers.input_data_reader import InputDataReader
+from database.models import Priority, Team, User
 
 
 class DimensionTablesPopulator:

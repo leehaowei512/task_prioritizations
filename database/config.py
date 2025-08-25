@@ -1,12 +1,13 @@
-# config.py
 import os
+
 
 from dotenv import load_dotenv
 
 load_dotenv()  # Load environment variables from .env file
 
+
 # Constants
-JSON_FILE_PATH = "data.json"
+JSON_FILE_PATH = 'database/data/data.json'
 
 
 def get_database_url():

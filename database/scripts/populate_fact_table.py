@@ -1,16 +1,15 @@
 # populate_fact_table.py
 from datetime import datetime
-from database_manager import DatabaseManager
-from dimension_tables_mapper import DimensionTableMapper
-from input_data_reader import InputDataReader
-from models import Task
+from database.helpers.database_manager import DatabaseManager
+from database.helpers.dimension_tables_mapper import DimensionTableMapper
+from database.helpers.input_data_reader import InputDataReader
+from database.models import Task
 
 
 def populate_fact_table():
     """Import tasks from JSON file into the database"""
 
-    db_manager = DatabaseManager()
-    session = db_manager.get_session()
+    session = DatabaseManager().get_session()
     dt_mapper = DimensionTableMapper(session)
     tasks_data = InputDataReader().get_tasks_data()
 
