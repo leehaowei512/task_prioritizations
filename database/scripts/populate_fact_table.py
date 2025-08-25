@@ -76,7 +76,6 @@ def populate_fact_table():
                     effort=task_data["effort"],
                     date_added=updated_timestamp.date(),
                     time_added=updated_timestamp.time(),
-                    week_added=updated_timestamp.isocalendar()[1],
                     description=task_data["description"],
                 )
 

@@ -33,12 +33,11 @@ class TaskDetailsView(Base):
             t.effort,
             t.date_added,
             t.time_added,
-            d.task_description as description
+            t.description
         FROM tasks t
         JOIN users u ON t.user_id = u.user_id
         JOIN teams tm ON t.team_id = tm.team_id
         JOIN priority p ON t.priority_id = p.priority_id
-        JOIN task_descriptions d ON t.task_id = d.task_id
         """
         )
 
