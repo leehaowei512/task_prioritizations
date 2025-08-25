@@ -17,7 +17,6 @@ class Task(Base):
     description = Column(String(500), nullable=False)
     date_added = Column(Date, default=datetime.utcnow().date)
     time_added = Column(Time, default=datetime.utcnow().time)
-    week_added = Column(Integer)  # Week number of the year
 
     # Relationships
     user = relationship("User", back_populates="tasks")
