@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, inspect, text
 
-from database.models import Base
 from database.helpers.database_manager import DatabaseManager
+from database.models import Base
 
 
 def create_tables():

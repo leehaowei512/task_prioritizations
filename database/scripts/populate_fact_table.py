@@ -1,5 +1,6 @@
 # populate_fact_table.py
 from datetime import datetime
+
 from database.helpers.database_manager import DatabaseManager
 from database.helpers.dimension_tables_mapper import DimensionTableMapper
 from database.helpers.input_data_reader import InputDataReader
