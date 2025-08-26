@@ -1,7 +1,7 @@
 from typing import Union
 
-from models import Priority, Team, User
-from dimension_effort_checker import EffortChecker
+from database.helpers.dimension_effort_checker import EffortChecker
+from database.models import Priority, Team, User
 
 
 class DimensionTableMapper:

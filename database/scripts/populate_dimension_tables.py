@@ -1,5 +1,5 @@
-from database_manager import DatabaseManager
-from dimension_tables_manager import DimensionTablesPopulator
+from database.helpers.database_manager import DatabaseManager
+from database.helpers.dimension_tables_manager import DimensionTablesPopulator
 
 
 def populate_dimension_tables():
